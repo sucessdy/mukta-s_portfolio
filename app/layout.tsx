@@ -1,5 +1,4 @@
 import Header from "@/components/Header";
-// import ContextActiveContextProvider from "@/Context/ContextActiveProvider";
 
 import "./globals.css";
 import type { Metadata } from "next";

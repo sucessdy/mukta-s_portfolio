@@ -15,13 +15,15 @@ import Link from "next/link";
 import useSectionInView from "@/lib/hooks";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home");
+  const { ref } = useSectionInView({sectionName: "Home"});
+
+  // const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
       ref={ref}
       id="home"
-      className=" z-10 scroll-mt-[100rem] mb-28 max-w-[58rem] text-center sm:mb-0"
+      className=" z-10 scroll-mt-[100rem] mb-28 max-w-[58rem] text-center sm:mb-0 justify-center"
     >
       <div className="flex items-center justify-center ">
         {" "}
