@@ -45,5 +45,5 @@ export function useActiveSectionContext() {
     );
   }
 
-  return context;
+  return  context ;
 }

@@ -37,42 +37,50 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Garmin Express Ltd",
-    location: "Delhi",
+    title: "Wordpress Developer",
+  company: "Garmin Express Updater",
     description:
-"I did a 3 month of intership as Wordpress developer where i learn about migrate and user interface more about deliver your work on time" ,
+"During my 4-month WordPress Developer internship, I used Elementor to create user-friendly websites, including a project for Garmin Express Updater. I gained experience in WordPress, UI design, and timely delivery while tailoring sites to client needs." ,
 icon:  React.createElement(LuGraduationCap),
-    date: "2023 ",
+    date: "Feb 2023 to May 2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: " Web Developer",
+    company: "Prachar Expert",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Developed React websites for various industries, focusing on user experience. Built responsive sites with HTML, CSS, and JavaScript, and designed engaging WordPress platforms. Collaborated with SEO experts and designers to enhance performance and visual appeal.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Nov 2023 - Mar 2024 · ",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Front End Developer",
+    company: "Experts Coder",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Developed and deployed high-performance React websites with user-friendly interfaces. Led teams, solved problems, and collaborated with SEO experts to optimize code for speed and efficiency. Consistently delivered projects on time, focusing on performance and user interaction.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Mar 2024 - Aug 2024 ·",
+  },
+  {
+    title: "UI/UX Designer ",
+    company: "Through LinkedIn",
+    description:
+      "Designing an all-in-one app with advanced UI/UX features like Glassmorphism and dark mode, enabling service price comparisons, and adding user-friendly features like payment splitting and personalized profiles, all while ensuring alignment with modern design standards.",
+    icon: React.createElement(FaReact),
+    date: "Apr 2024 - Present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Enchanted Real Estate",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["React", "Framer motion", "React tilt", "Email Js", "GSAP"],
     // imageUrl: corpcommentImg,
     imageUrl: Meta,
   },
   {
-    title: "rmtDev",
+    title: "Prachar Expert",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: [" Wordpress" , " UI "] ,

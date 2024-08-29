@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { skillsData } from "@/lib/data";
 import useSectionInView from "@/lib/hooks";
@@ -9,12 +9,12 @@ const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
   },
-  animate:  (index : number ) => ( {
+  animate: (index: number) => ({
     opacity: 1,
     transition: {
-      delay: 0.05 * index , 
+      delay: 0.05 * index,
     },
-  })
+  }),
 };
 
 export default function Skills() {
@@ -29,8 +29,7 @@ export default function Skills() {
             gsap.to(entry.target, {
               opacity: 1,
               duration: 1, // Adjust the duration as needed
-            }); 
-
+            });
           }
         });
       },
@@ -46,7 +45,10 @@ export default function Skills() {
   }, []);
 
   return (
-    <section  id="skills" className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+    <section
+      id="skills"
+      className="mb-28 pt-10 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+    >
       <h1 className="text-3xl font-raleway font-bold mb-8 uppercase">Skills</h1>
 
       <ul className="flex justify-center flex-wrap text-center gap-4 text-gray-700 text-lg">
@@ -57,7 +59,7 @@ export default function Skills() {
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
-            viewport={{once: true }}
+            viewport={{ once: true }}
             custom={index}
           >
             {skill}

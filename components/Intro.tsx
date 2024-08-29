@@ -1,29 +1,30 @@
 "use client";
 
 import Image from "next/image";
-
 import { motion } from "framer-motion";
 import { HiDownload } from "react-icons/hi";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { ImLinkedin } from "react-icons/im";
 import { BsGithub } from "react-icons/bs";
-
 import me from "@/public/me.png";
-
 import React from "react";
 import Link from "next/link";
 import useSectionInView from "@/lib/hooks";
-
+import { useActiveSectionContext } from "@/Context/ContextActiveProvider";
 export default function Intro() {
-  const { ref } = useSectionInView({sectionName: "Home"});
+  const { ref } = useSectionInView({sectionName: "Home"})
 
-  // const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const {
+    setActiveSection, 
+    setTimeOfLastClick
+  } = useActiveSectionContext()
+
 
   return (
     <section
-      ref={ref}
+      ref={ref} 
       id="home"
-      className=" z-10 scroll-mt-[100rem] mb-28 max-w-[58rem] text-center sm:mb-0 justify-center"
+      className="z-10 scroll-mt-[100rem] mb-28 max-w-[58rem] text-center sm:mb-0 justify-center"
     >
       <div className="flex items-center justify-center ">
         {" "}
@@ -49,53 +50,59 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className=" mb-10 mt-4 text-2xl font-medium leading-[1.5] sm:text-4xl font-roboto "
       >
-        <span className="font-bold font-roboto line text-gradient-to-t  bg-gradient-to-l from-violet-500 to-transparent text-transparent bg-clip-text">
+        <span className="font-bold font-roboto line text-gradient-to-t    bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text  ">
           {" "}
-          Hello, I'm Mukta Kashyap.
+          Hello, I&#39;am Mukta Kashyap.
         </span>{" "}
-        I'm a
+        I&#39;m a
         <span className="font-bold bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white bg-clip-text font-roboto">
           {" "}
-          web developer and UI/UX designer.{" "}
+   
         </span>
-        I have a passion for creating websites and crafting engaging designs.
-        {/* <span className="font-italic"> My primary focus is on </span> */}
+        Frontend developer and UI/UX designer.{" "}  I have a passion for creating websites and crafting engaging designs.
       </motion.p>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="text-white flex-col sm:flex-row  flex gap-2 px-4  text-lg font-medium items-center justify-center"
+        className="text-white flex-col sm:flex-row  flex gap-4 px-4  text-lg font-medium items-center justify-center"
       >
+
         <Link
           href="#contact"
-          className="bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] transition hover:scale-[1.1rem] hover:bg-gray-950 active:scale-105 "
+          className= " group bg-gray-900  text-white px-7 py-3 flex items-center gap-2 rounded-full focus hover:bg-gray-950 active:scale-105 " onClick={() => {
+            setActiveSection("Contact")
+            setTimeOfLastClick(Date.now())
+          }}
         >
-          <span>Contact me here</span>
+          <span className=" flex items-center gap-2 rounded-full outline-none transition-all">Contact me here</span>
 
-          <BiRightArrowAlt className="hover:opacity-70 group-hover:translate-x-1 transition" />
+         
+
+          <BiRightArrowAlt className="hover:opacity-70 group-hover:translate-x-2 transition" />
         </Link>
 
         <a
-          href="./cv"
+          href="/mukta_resume.pdf"
           download
-          className="bg-white text-[#1d1d1c] px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-[1.15] transition hover:scale-[1.1rem] hover:bg-white opacity-90 active:scale-105 cursor-pointer "
+          className="group bg-white text-[#1d1d1c] px-7 py-3 flex items-center gap-2 rounded-full  focus justify-center "
         >
-          <span> Download CV </span>{" "}
+          <span className=" flex items-center justify-center"> Download CV </span>{" "}
           <HiDownload className="hover:opacity-70 group-hover:translate-y-1 transition  " />
         </a>
         <a
-          href="https://www.linkedin.com/in/mukta-kumari-63012a263/"
+          href="https://www.linkedin.com/in/mukta-kumari/"
           target="_blank"
-          className="bg-white text-[#1d1d1c] p-4 flex items-center rounded-full gap-2 "
+          className="bg-white text-[#1d1d1c] p-4 flex items-center rounded-full gap-2 focus  "
         >
           {" "}
           {<ImLinkedin />}{" "}
         </a>
         <a
-          href=""
-          className="bg-white text-[#1d1d1c] p-4 flex items-center rounded-full gap-2 "
+          href="https://github.com/sucessdy"
+          target="_blank"
+          className="bg-white text-[#1d1d1c] p-4 flex items-center rounded-full gap-2 focus "
         >
           {" "}
           {<BsGithub />}{" "}

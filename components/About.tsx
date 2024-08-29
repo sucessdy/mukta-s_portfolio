@@ -16,7 +16,7 @@ export default function About() {
   useEffect(() => {
 
     if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection("About");
+      setActiveSection("Home");
     }
     
   }, [inView, setActiveSection, timeOfLastClick] )
@@ -35,22 +35,8 @@ export default function About() {
         {" "}
         About Me
       </h1>
-      <p className="font-regular font-fredoka text-stone-600  mt-12">
-        {" "}
-        👋 Hey there! I'm Mukta, your friendly neighborhood web wizard 🧙‍♂️, armed
-        with a keyboard and a passion for creating digital magic!
-        <span className="font-fredoka  text-stone-600">
-          {" "}
-          🌐 As a web developer, I'm your go-to guy for all things HTML, CSS,
-          and JavaScript. I don't just code; I craft user experiences that leave
-          people saying, "Wow, that's sleek!" 💻✨ 🎨 And speaking of sleek, my
-          UI/UX designs are like the superhero capes of the internet world.
-          Figma is my trusty sidekick, helping me bring your visions to life
-          with pixel-perfect precision. 🎨💡💡 My goal? To make the web a
-          cooler, more user-friendly place, one pixel at a time. Whether it's a
-          killer website or a jaw-dropping app, I've got your back. 💪
-        </span>
-      </p>
+      <p className="mb-3"> As a Frontend developer, I'm passionate about creating beautiful and functional user experiences. My expertise lies in <span className="font-medium">HTML, CSS, and JavaScript</span>, where I don't just code, but craft user experiences that make people say, "Wow, that's sleek!" 💻✨ My core stack includes <span className="font-medium">React & Next.js</span>. I'm currently looking for a <span className="font-medium">full-time position</span> as a software developer. </p> <p> <span className="italic">When I'm not coding</span>, I dive into design. I love creating cool designs and beautiful UIs, always researching how to enhance user experience using Figma. I enjoy making prototypes and turning them into something that users will love.  </p>
     </motion.section>
   );
 }
+
