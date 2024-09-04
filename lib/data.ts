@@ -61,8 +61,8 @@ icon:  React.createElement(LuGraduationCap),
     date: "Mar 2024 - Aug 2024 ·",
   },
   {
-    title: "UI/UX Designer ",
-    company: "Through LinkedIn",
+    title: "UI/UX Designer",
+    company: "Through LinkedIn - (freelance)",
     description:
       "Designing an all-in-one app with advanced UI/UX features like Glassmorphism and dark mode, enabling service price comparisons, and adding user-friendly features like payment splitting and personalized profiles, all while ensuring alignment with modern design standards.",
     icon: React.createElement(FaReact),
@@ -74,33 +74,30 @@ export const projectsData = [
   {
     title: "Enchanted Real Estate",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I built a sleek real estate website using React.js and Tailwind CSS, adding smooth animations and clear milestone displays for an engaging user experience.",
     tags: ["React", "Framer motion", "React tilt", "Email Js", "GSAP"],
     // imageUrl: corpcommentImg,
     imageUrl: Meta,
+    redirect_link: 'https://enchanted-estate-website.netlify.app/'
   },
   {
     title: "Prachar Expert",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: [" Wordpress" , " UI "] ,
+      "I developed a website for Prachar Expert using HTML, CSS, and JavaScript, creating a polished and professional online presence for the company.",
+    tags: ["HTML" , "CSS", "JavaScript", "PHP"] ,
     imageUrl: Tesla,
+    redirect_link: "https://www.pracharexpert.com/"
   },
   {
-    title: "Word Analytics",
+    title: "My Portfolio",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "My portfolio, built with Next.js, Tailwind, Resend, Framer Motion, and GSAP, features a modern, sleek design with interactive and engaging elements.",
+    tags: ["Next js", "Resend", "Framer motion", "Tailwind", "Gsap"],
     imageUrl: nova,
+    redirect_link: "/"
   },
 
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: nova,
-  },
+ 
 ] as const;
 
 export const skillsData = [
