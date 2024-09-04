@@ -53,7 +53,7 @@ export default function Project({
           </p>
           <a
           href={redirect_link}
-          className="underline  font-semibold flex gap-2 justify-start items-center text-gray-700"
+          className="underline  font-semibold flex gap-2 justify-start items-center text-gray-700 mt-1"
           target="_blank"
           
           
@@ -80,7 +80,7 @@ export default function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          className="absolute hidden sm:block top-8 -right-40 w-[30.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

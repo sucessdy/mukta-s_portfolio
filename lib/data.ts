@@ -3,9 +3,10 @@ import {CgWorkAlt} from "react-icons/cg"
 import { LuGraduationCap}   from "react-icons/lu"
 
 import {FaReact} from "react-icons/fa"
-import Meta from "@/assets/Meta.png";
-import Tesla from "@/assets/Tesla.png";
-import nova from "@/assets/nova.png";
+import Enchanted from "@/assets/Enchanted.png";
+import Prachar from "@/assets/Prachar.png"
+import Portfolio from "@/assets/Portfolio.png"
+
 import React from "react";
 
 export const links = [
@@ -77,7 +78,7 @@ export const projectsData = [
       "I built a sleek real estate website using React.js and Tailwind CSS, adding smooth animations and clear milestone displays for an engaging user experience.",
     tags: ["React", "Framer motion", "React tilt", "Email Js", "GSAP"],
     // imageUrl: corpcommentImg,
-    imageUrl: Meta,
+    imageUrl: Enchanted,
     redirect_link: 'https://enchanted-estate-website.netlify.app/'
   },
   {
@@ -85,7 +86,7 @@ export const projectsData = [
     description:
       "I developed a website for Prachar Expert using HTML, CSS, and JavaScript, creating a polished and professional online presence for the company.",
     tags: ["HTML" , "CSS", "JavaScript", "PHP"] ,
-    imageUrl: Tesla,
+    imageUrl: Prachar,
     redirect_link: "https://www.pracharexpert.com/"
   },
   {
@@ -93,7 +94,7 @@ export const projectsData = [
     description:
       "My portfolio, built with Next.js, Tailwind, Resend, Framer Motion, and GSAP, features a modern, sleek design with interactive and engaging elements.",
     tags: ["Next js", "Resend", "Framer motion", "Tailwind", "Gsap"],
-    imageUrl: nova,
+    imageUrl: Portfolio,
     redirect_link: "/"
   },
 
