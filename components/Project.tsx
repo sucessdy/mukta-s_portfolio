@@ -1,20 +1,23 @@
 "use client";
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
 
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: string;
+  redirect_link: string;
+};
 
-type ProjectProps = (typeof projectsData)[number];
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
-  redirect_link
-  
-
+  redirect_link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -24,7 +27,6 @@ export default function Project({
   });
 
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
@@ -37,32 +39,20 @@ export default function Project({
       className="group mb-12 sm:mb-8 last:mb-0 "
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-400 transition sm:group-even:pl-8 dark:text-white dark:bg-white/30 dark:hover:bg-white/40">
-
-      {projectsData.map((project, index) => (
-        
-      
-        <div key={index} className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-
-
+        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold text-[#1d1d1c] text-left">
             {title}
           </h3>
-       
           <p className="mt-2 leading-relaxed text-gray-700 text-left text-sm ">
             {description}
           </p>
           <a
-          href={redirect_link}
-          className="underline  font-semibold flex gap-2 justify-start items-center text-gray-700 mt-1"
-          target="_blank"
-          
-          
-        >
-
-         
-    See Here  <MdArrowOutward />{" "}
-        </a>
-        <button> {redirect_link}</button>
+            href={redirect_link}
+            className="underline  font-semibold flex gap-2 justify-start items-center text-gray-700 mt-1"
+            target="_blank"
+          >
+            See Here <MdArrowOutward />
+          </a>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -73,9 +63,7 @@ export default function Project({
               </li>
             ))}
           </ul>
-        
         </div>
-  ))}
         <Image
           src={imageUrl}
           alt="Project I worked on"
