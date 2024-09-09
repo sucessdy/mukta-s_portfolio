@@ -1,9 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  // experimental: {
-  //   serverActions: true,
-  // },
-};
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer({
+  reactStrictMode: true,
+  swcMinify: true,
+  optimizeFonts: true,
+  experimental: {
+    optimizeCss: true,
+    images: {
+      allowFutureImage: true,
+    },
+  },
+});

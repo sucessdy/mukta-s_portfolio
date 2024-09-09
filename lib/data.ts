@@ -111,7 +111,7 @@ export const skillsData = [
 
   "Git",
   "Tailwind",
-  ,
+  
   "Figma",
   "UI/UX design",
   "Framer Motion",

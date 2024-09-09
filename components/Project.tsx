@@ -1,14 +1,15 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
+import { StaticImageData } from 'next/image';
 import { useScroll, useTransform, motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
 
 type ProjectProps = {
   title: string;
   description: string;
-  tags: string[];
-  imageUrl: string;
+  tags: readonly string[];
+  imageUrl: StaticImageData;
   redirect_link: string;
 };
 
