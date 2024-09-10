@@ -10,3 +10,16 @@ declare module 'next/image' {
     export { MdArrowOutward };
   }
   
+
+  declare module 'react-icons/md' {
+    const MdOutlineWork: any;
+    export { MdOutlineWork };
+  }
+
+  
+  declare module 'me.png' {
+    const value: string;
+    export default value;
+  }
+  
+

@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import { projectsData } from "@/lib/data";
 import Project from "./Project";
@@ -20,7 +19,7 @@ export default function Projects() {
             {" "}
             <Project {...project} />
           </React.Fragment>
-        ))}{" "}
+        ))}
       </div>
     </section>
   );

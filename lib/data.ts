@@ -3,9 +3,9 @@ import {CgWorkAlt} from "react-icons/cg"
 import { LuGraduationCap}   from "react-icons/lu"
 
 import {FaReact} from "react-icons/fa"
-import Enchanted from "@/assets/Enchanted.png";
-import Prachar from "@/assets/Prachar.png"
-import Portfolio from "@/assets/Portfolio.png"
+import Enchanted from "@/public/Enchanted.png";
+import Prachar from "@/public/Prachar.png"
+import Portfolio from "@/public/Portfolio.png"
 
 import React from "react";
 
@@ -86,15 +86,15 @@ export const projectsData = [
     description:
       "I developed a website for Prachar Expert using HTML, CSS, and JavaScript, creating a polished and professional online presence for the company.",
     tags: ["HTML" , "CSS", "JavaScript", "PHP"] ,
-    imageUrl: Prachar,
+    imageUrl:Prachar,
     redirect_link: "https://www.pracharexpert.com/"
   },
   {
     title: "My Portfolio",
     description:
       "My portfolio, built with Next.js, Tailwind, Resend, Framer Motion, and GSAP, features a modern, sleek design with interactive and engaging elements.",
-    tags: ["Next js", "Resend", "Framer motion", "Tailwind", "Gsap"],
-    imageUrl: Portfolio,
+    tags: ["Next js", "Resend", "Framer motion", "Tailwind"],
+    imageUrl:Portfolio,
     redirect_link: "/"
   },
 

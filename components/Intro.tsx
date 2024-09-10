@@ -39,7 +39,7 @@ export default function Intro() {
             alt="my"
             width={192}
             height={192}
-            quality={90}
+            quality={95}
             priority={true}
             className="w-24 h-24 object-cover rounded-full border-white shadow-xl border-[0.35rem]"
           />{" "}
@@ -48,18 +48,19 @@ export default function Intro() {
       <motion.p
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className=" mb-10 mt-4 text-2xl font-medium leading-[1.5] sm:text-4xl font-roboto "
+        className=" mb-10 mt-4 text-2xl font-medium leading-[1.5] sm:text-4xl  "
       >
-        <span className="font-bold font-roboto line text-gradient-to-t    bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text  ">
+        <span className="font-bold line text-gradient-to-t    bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text ">
           {" "}
-          Hello, I&#39;am Mukta Kashyap.
+          Hi there! I&#39;m Mukta.
         </span>{" "}
-        I&#39;m a
-        <span className="font-bold bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white bg-clip-text font-roboto">
+
+        <span className= " bg-gray-600 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 bg-clip-text ">
           {" "}
    
+          I&#39;m a frontend developer and UI/UX designer who loves crafting engaging websites with React & Next.js. 
         </span>
-        Frontend developer and UI/UX designer.{" "}  I have a passion for creating websites and crafting engaging designs.
+       
       </motion.p>
 
       <motion.div

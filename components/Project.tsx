@@ -1,18 +1,14 @@
 "use client";
 import { useRef } from "react";
 import Image from "next/image";
+
 import { useScroll, useTransform, motion } from "framer-motion";
+
 import { MdArrowOutward } from "react-icons/md";
-
-type ProjectProps = {
-  title: string;
-  description: string;
-  tags: readonly string[];
-  imageUrl: string;
-  redirect_link: string;
-};
+import { projectsData } from "@/lib/data";
 
 
+type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
   title,
